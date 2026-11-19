@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michael Riveira · IT Manager, Dealership Technology</title>
+<meta name="description" content="Michael Riveira runs dealership IT across New York and New Jersey: 500+ endpoints, six rooftops, automation, AI tools and agentic workflows.">
+<meta name="author" content="Michael Riveira">
+<link rel="canonical" href="https://mikeriveira.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mikeriveira.github.io/">
+<meta property="og:title" content="Michael Riveira · IT Manager, Dealership Technology">
+<meta property="og:description" content="Automation, AI tools and agentic workflows for multi-site dealership IT. 500+ endpoints across New York and New Jersey.">
+<meta property="og:image" content="https://mikeriveira.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1120">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Michael Riveira","jobTitle":"IT Manager","address":{"@type":"PostalAddress","addressRegion":"NY","addressCountry":"US"},"url":"https://mikeriveira.github.io/","sameAs":["https://github.com/MikeRiveira","https://www.linkedin.com/in/michael-riveira-874a06178/"]}
+</script>
+<style>
+:root{
+  --bg:#0b1120; --bg-2:#0f172a; --panel:#111a2e; --panel-2:#16213a;
+  --line:#1f2b45; --line-2:#2a3858;
+  --text:#e8eefc; --muted:#9aa8c4; --dim:#6b7a99;
+  --blue:#7aa2ff; --cyan:#22d3ee; --accent:#4f7cff;
+  --green:#4ade80; --amber:#fbbf24;
+  --radius:16px;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+@media (max-width:600px){.wrap{padding:0 16px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;z-index:50}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+
+/* left accent bar, matching the banner */
+body::before{content:"";position:fixed;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--accent),var(--cyan));z-index:40}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:30;background:rgba(11,17,32,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.nav.scrolled{border-bottom-color:var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.01em}
+.mono{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--cyan));color:#06101f;font-size:13px;font-weight:800}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;padding:8px 12px;border-radius:8px}
+.nav-links a:hover{color:var(--text);background:var(--panel)}
+@media (max-width:720px){.nav-links a.hide-sm{display:none}}
+
+/* hero */
+.hero{position:relative;padding:88px 0 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 380px at 85% 20%,rgba(79,124,255,.20),transparent 70%),
+  radial-gradient(500px 300px at 95% 90%,rgba(34,211,238,.10),transparent 70%);pointer-events:none}
+.hero::after{content:"";position:absolute;right:0;top:0;bottom:0;width:55%;background-image:
+  linear-gradient(rgba(122,162,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(122,162,255,.06) 1px,transparent 1px);
+  background-size:40px 40px;mask-image:linear-gradient(90deg,transparent,#000 60%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 60%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero{padding:56px 0 48px}}
+.eyebrow{color:var(--blue);font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 14px}
+h1{font-size:clamp(40px,7vw,72px);line-height:1.02;letter-spacing:-.035em;margin:0 0 20px;font-weight:800}
+.lede{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:40ch;margin:0 0 24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 32px;padding:0;list-style:none}
+.chip{font-size:14px;color:#cdd8f0;background:rgba(30,44,74,.7);border:1px solid var(--line-2);padding:6px 14px;border-radius:999px;white-space:nowrap}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:12px 18px;border-radius:12px;border:1px solid var(--line-2);background:var(--panel);transition:transform .15s,border-color .15s,background .15s}
+.btn:hover{transform:translateY(-1px);border-color:var(--blue)}
+.btn.primary{background:linear-gradient(135deg,var(--accent),#3b82f6);border-color:transparent;color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* terminal card in hero */
+.term{background:#0a0f1c;border:1px solid var(--line-2);border-radius:var(--radius);box-shadow:0 30px 80px -20px rgba(0,0,0,.6);font:14px/1.75 "JetBrains Mono",ui-monospace,Consolas,monospace;overflow:hidden}
+.term-bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.term-bar i{width:10px;height:10px;border-radius:50%;background:var(--line-2)}
+.term-body{padding:16px 20px 20px;white-space:pre-wrap;color:#cdd8f0;min-height:250px}
+.t-prompt{color:var(--blue)}.t-crit{color:#f87171}.t-norm{color:var(--blue)}.t-dim{color:var(--dim)}.t-ok{color:var(--green)}.t-warn{color:var(--amber)}
+.cursor{display:inline-block;width:8px;height:1.1em;background:var(--blue);vertical-align:-3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (max-width:900px){.term{max-width:560px}}
+@media (max-width:420px){.term{font-size:12.5px}.term-body{padding:14px}}
+
+/* sections */
+section{padding:72px 0;scroll-margin-top:64px}
+section + section{border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+h2{font-size:clamp(28px,4vw,36px);letter-spacing:-.025em;margin:0;line-height:1.15}
+.sec-sub{color:var(--muted);margin:8px 0 0;max-width:60ch}
+
+/* impact */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:720px){.stats{grid-template-columns:1fr}}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden}
+.stat::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--cyan));opacity:.8}
+.stat .num{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;background:linear-gradient(135deg,#fff,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+.stat .label{font-weight:600;margin:12px 0 6px}
+.stat p{margin:0;color:var(--muted);font-size:14px}
+
+/* about / focus */
+.focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card h3{margin:12px 0 6px;font-size:17px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.ico{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:var(--panel-2);border:1px solid var(--line-2);color:var(--cyan)}
+.ico svg{width:20px;height:20px}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:820px){.projects{grid-template-columns:1fr}}
+.proj{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}
+.proj:hover{transform:translateY(-3px);border-color:var(--line-2);box-shadow:0 24px 60px -24px rgba(79,124,255,.35)}
+.proj .shot{aspect-ratio:2/1;background:var(--bg-2);border-bottom:1px solid var(--line);overflow:hidden}
+.proj .shot img{width:100%;height:100%;object-fit:cover}
+.proj .body{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.proj h3{margin:0;font-size:20px;letter-spacing:-.015em}
+.proj p{margin:0;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.tags li{font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;color:var(--blue);background:rgba(79,124,255,.10);border:1px solid rgba(79,124,255,.25);padding:6px 8px;border-radius:6px}
+.badge{font-size:12px;font-weight:600;color:var(--green);background:rgba(74,222,128,.10);border:1px solid rgba(74,222,128,.25);padding:4px 8px;border-radius:6px;align-self:flex-start}
+.proj .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}
+.proj .links a{font-size:14px;padding:9px 14px}
+
+/* toolbox */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.tool-group h3{margin:0 0 12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.tool-group ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.tool-group li{font-size:14px;background:var(--panel-2);border:1px solid var(--line-2);padding:6px 12px;border-radius:999px;color:#cdd8f0}
+
+/* connect */
+.connect{background:linear-gradient(135deg,rgba(79,124,255,.16),rgba(34,211,238,.06));border:1px solid var(--line-2);border-radius:20px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.connect h2{margin-bottom:8px}
+.connect p{margin:0;color:var(--muted);max-width:52ch}
+@media (max-width:600px){.connect{padding:28px 20px}}
+
+footer{padding:32px 0 48px;color:var(--dim);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--text)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.no-js .reveal{opacity:1;transform:none}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Michael Riveira, back to top"><span class="mono" aria-hidden="true">MR</span><span>Michael Riveira</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#impact" class="hide-sm">Impact</a>
+      <a href="#projects">Projects</a>
+      <a href="#toolbox" class="hide-sm">Toolbox</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">IT Manager · Dealership Technology</p>
+      <h1 id="hero-title">Michael Riveira</h1>
+      <p class="lede">I run IT for a six-rooftop dealership group across New York and New Jersey, and I use automation, AI tools and agentic workflows to keep it running smoothly.</p>
+      <ul class="chips" aria-label="At a glance">
+        <li class="chip">500+ endpoints</li>
+        <li class="chip">New York &amp; New Jersey</li>
+        <li class="chip">Automation</li>
+        <li class="chip">AI agents</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn primary" href="#projects">See my projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a class="btn" href="https://www.linkedin.com/in/michael-riveira-874a06178/" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+        <a class="btn" href="https://github.com/MikeRiveira" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a>
+      </div>
+    </div>
+    <div class="term" role="img" aria-label="Example: an AI assistant answering 'give me my morning brief' with a ranked help desk queue">
+      <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="term-body" id="term" aria-hidden="true"><span class="t-prompt">&gt; give me my morning brief</span>
+
+<span class="t-crit">CRITICAL</span> #2043 Outlook password
+  <span class="t-dim">first-response SLA missed</span>
+<span class="t-crit">CRITICAL</span> #2038 Termination
+  <span class="t-dim">waiting on IT over 24 h</span>
+<span class="t-norm">NORMAL  </span> #2045 DMS won't open
+
+<span class="t-warn">5 offline</span> · worst: Maplewood Kia
+<span class="t-ok">phone/email redacted · read-only</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="impact" aria-labelledby="impact-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 id="impact-title">Impact</h2>
+        <p class="sec-sub">I'm the IT Manager at Generation Auto Group, responsible for infrastructure, endpoints, security and the dealership software stack.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal">
+        <div class="num" data-count="500" data-suffix="+">500+</div>
+        <div class="label">Managed endpoints</div>
+        <p>Provisioning, patching, monitoring and support across every store.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="num" data-count="6">6</div>
+        <div class="label">Rooftops, ~240 employees</div>
+        <p>Multi-site dealership IT across New York and New Jersey.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="num" data-count="6">6</div>
+        <div class="label">Domains locked down</div>
+        <p>SPF, DKIM and DMARC at quarantine on every company domain to stop email spoofing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="focus" aria-labelledby="focus-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 id="focus-title">What I work on</h2>
+        <p class="sec-sub">Taking repetitive work off people's plates so a multi-location operation runs smoothly.</p>
+      </div>
+    </div>
+    <div class="focus">
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>IT management</h3>
+        <p>Multi-site dealership IT, 500+ managed endpoints, provisioning, security and support.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3>IT &amp; automation</h3>
+        <p>Scripting and scheduling routine admin, reporting and data-movement tasks.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l1.5-6h9L18 17M7 21v-4M17 21v-4"/><circle cx="8" cy="14" r=".5"/><circle cx="16" cy="14" r=".5"/></svg></div>
+        <h3>Dealership tech</h3>
+        <p>DMS, CRM and inventory data integrations, lead routing, and reporting for sales and service.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+        <h3>AI tools</h3>
+        <p>LLM-powered assistants for internal knowledge, document handling and customer communication.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Agentic workflows</h3>
+        <p>Multi-step AI agents that use tools, APIs and human approval steps to finish real tasks.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Security</h3>
+        <p>Email authentication, endpoint protection, backups and staff training on phishing and safe AI use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" aria-labelledby="projects-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 id="projects-title">Featured projects</h2>
+        <p class="sec-sub">Open-source tools built from real dealership IT work. Public versions use a fictional company, Demo Auto Group, with made-up data.</p>
+      </div>
+      <a class="btn" href="https://github.com/MikeRiveira?tab=repositories" rel="noopener">All repositories</a>
+    </div>
+    <div class="projects">
+
+      <article class="proj reveal">
+        <a class="shot" href="https://mikeriveira.github.io/dealership-it-dashboard/" tabindex="-1" aria-hidden="true"><img src="assets/dealership-it-dashboard.jpg" alt="" width="960" height="480"></a>
+        <div class="body">
+          <h3>Dealership IT Dashboard</h3>
+          <p>One screen for multi-store dealership IT: a ranked help desk queue, new hire and termination checklists, device health per site, domain security checks, and an AI assistant that briefs you.</p>
+          <ul class="tags"><li>JavaScript</li><li>HTML/CSS</li><li>Claude</li><li>Atera</li><li>Microsoft 365</li></ul>
+          <div class="links">
+            <a class="btn primary" href="https://mikeriveira.github.io/dealership-it-dashboard/">Live demo</a>
+            <a class="btn" href="https://github.com/MikeRiveira/dealership-it-dashboard" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal">
+        <a class="shot" href="https://github.com/MikeRiveira/atera-triage-mcp" tabindex="-1" aria-hidden="true"><img src="assets/atera-triage-mcp.jpg" alt="" width="960" height="480"></a>
+        <div class="body">
+          <h3>Atera Triage MCP</h3>
+          <p>An MCP server that lets AI assistants triage an Atera help desk: ranked tickets with reasons, technician workload, site health and alerts, with personal data redacted and read-only by default.</p>
+          <span class="badge">Graded A · A · A on Glama</span>
+          <ul class="tags"><li>Python</li><li>MCP</li><li>Claude</li><li>Atera</li><li>Privacy-first</li></ul>
+          <div class="links">
+            <a class="btn primary" href="https://github.com/MikeRiveira/atera-triage-mcp" rel="noopener">Code</a>
+            <a class="btn" href="https://glama.ai/mcp/servers/MikeRiveira/atera-triage-mcp" rel="noopener">Glama listing</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal">
+        <a class="shot" href="https://github.com/MikeRiveira/domain-security-checker" tabindex="-1" aria-hidden="true"><img src="assets/domain-security-checker.jpg" alt="" width="960" height="480"></a>
+        <div class="body">
+          <h3>Domain Security Checker</h3>
+          <p>Checks MX, SPF, DKIM, DMARC, MTA-STS, BIMI, SSL and domain expiry across every domain you own, with a daily GitHub Actions scan and text, Markdown, JSON or CSV reports.</p>
+          <ul class="tags"><li>Python</li><li>DNS</li><li>Email security</li><li>GitHub Actions</li></ul>
+          <div class="links">
+            <a class="btn primary" href="https://github.com/MikeRiveira/domain-security-checker" rel="noopener">Code</a>
+            <a class="btn" href="https://github.com/MikeRiveira/domain-security-checker/releases" rel="noopener">Releases</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal">
+        <a class="shot" href="https://github.com/MikeRiveira/dealership-security-ai-training" tabindex="-1" aria-hidden="true"><img src="assets/dealership-security-ai-training.jpg" alt="" width="960" height="480"></a>
+        <div class="body">
+          <h3>Dealership IT Security &amp; AI Training</h3>
+          <p>Seven training videos for every dealership department on phishing, passwords, customer data, ransomware and responsible AI use, with NY, NJ and federal rules built in. Includes the facilitator guide, quiz key and legal references.</p>
+          <ul class="tags"><li>Security awareness</li><li>Responsible AI</li><li>Compliance</li></ul>
+          <div class="links">
+            <a class="btn primary" href="https://github.com/MikeRiveira/dealership-security-ai-training" rel="noopener">View materials</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="toolbox" aria-labelledby="toolbox-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <h2 id="toolbox-title">Toolbox</h2>
+        <p class="sec-sub">The platforms I run day to day.</p>
+      </div>
+    </div>
+    <div class="tools">
+      <div class="card tool-group reveal"><h3>Dealer management &amp; data</h3><ul><li>CDK</li><li>Reynolds and Reynolds</li><li>Tekion</li><li>Authenticom</li></ul></div>
+      <div class="card tool-group reveal"><h3>Customer engagement</h3><ul><li>Podium</li><li>Numa</li><li>MasterMind</li></ul></div>
+      <div class="card tool-group reveal"><h3>Endpoint management &amp; security</h3><ul><li>Atera</li><li>NinjaOne</li><li>Action1</li><li>Webroot</li><li>Apple Business Manager</li><li>SimpleMDM</li></ul></div>
+      <div class="card tool-group reveal"><h3>Passwords &amp; remote access</h3><ul><li>Keeper</li><li>KeePass</li><li>Splashtop</li></ul></div>
+      <div class="card tool-group reveal"><h3>Microsoft 365 &amp; docs</h3><ul><li>Office 365 admin</li><li>Afi.AI backups</li><li>Confluence</li></ul></div>
+      <div class="card tool-group reveal"><h3>Network, domains &amp; phones</h3><ul><li>UniFi Site Manager</li><li>Cloudflare</li><li>GoDaddy</li><li>MxToolbox</li><li>GoTo</li></ul></div>
+      <div class="card tool-group reveal"><h3>AI &amp; automation</h3><ul><li>Claude Code</li><li>MCP connectors</li><li>Python</li><li>GitHub Actions</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="connect" aria-labelledby="connect-title">
+  <div class="wrap">
+    <div class="connect reveal">
+      <div>
+        <h2 id="connect-title">Let's connect</h2>
+        <p>Happy to talk dealership IT, automation and practical AI. Find me on LinkedIn or follow my work on GitHub.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn primary" href="https://www.linkedin.com/in/michael-riveira-874a06178/" rel="noopener">Connect on LinkedIn</a>
+        <a class="btn" href="https://github.com/MikeRiveira" rel="noopener">Follow on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Michael Riveira · New York</span>
+    <span><a href="https://github.com/MikeRiveira/mikeriveira.github.io" rel="noopener">Source for this site</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  var nav=document.querySelector('header.nav');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8)};
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||reduce){els.forEach(function(e){e.classList.add('in')});}
+  else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        en.target.classList.add('in'); io.unobserve(en.target);
+        var n=en.target.querySelector('.num[data-count]'); if(n) count(n);
+      });
+    },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  }
+  function count(el){
+    var end=+el.dataset.count, suf=el.dataset.suffix||'', t0=null, dur=900;
+    function step(t){ if(!t0)t0=t; var p=Math.min(1,(t-t0)/dur); el.textContent=Math.round(end*(1-Math.pow(1-p,3)))+suf; if(p<1)requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  // type the terminal once, unless reduced motion
+  var term=document.getElementById('term');
+  if(term && !reduce){
+    var html=term.innerHTML, out='', i=0, inTag=false;
+    term.innerHTML='<span class="cursor"></span>';
+    (function tick(){
+      if(i>=html.length){term.innerHTML=html+'<span class="cursor"></span>';return;}
+      var c=html[i++]; out+=c;
+      if(c==='<')inTag=true; if(c==='>'){inTag=false;}
+      if(c==='&'){var semi=html.indexOf(';',i); out+=html.slice(i,semi+1); i=semi+1;}
+      if(inTag){tick();return;}
+      term.innerHTML=out+'<span class="cursor"></span>';
+      setTimeout(tick, c==='\n'?140:(i<26?55:12));
+    })();
+  }
+})();
+</script>
+</body>
+</html>
